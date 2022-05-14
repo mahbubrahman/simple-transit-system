@@ -55,9 +55,9 @@ public class TransitSystemPrinter {
         for (Connection each : route) {
             currentLine = each.getRoute().getName();
             if (currentLine.equals(previousLine)) {
-                out.println("  Continue past  " + each.getStationStop1().getName() + " > ");
+                out.println("  " + each.getStationStop1().getName() + " to " + each.getStationStop2().getName() + " > " + currentLine);
             } else {
-                out.println("When at " + each.getStationStop1().getName() + ", get off the " + previousLine + ".");
+                out.print("  When at " + each.getStationStop1().getName() + ", get off the " + previousLine + ". ");
                 out.println("Transfer to the " + currentLine + ", heading towards " + each.getStationStop2().getName() + ".");
                 previousLine = currentLine;
             }
