@@ -8,8 +8,8 @@ Transit System requires routes, stops and trips (with stop traversal sequence an
 system. A different combination of MBTA api can be used to read the required resources. In this implementation, 
 I read the MBTA routes I am interested about (by using filter) and then for each route, read the rest of 
 the dataset in a single GET using nested include feature of jsonapi. This allows me to avoid the N+1 requests to read 
-the dataset transit system requires for initialization. Use of nested includes makes the filtering of initial route read
-with or without filter less concerning as all it needs is the route id to make the next read. 
+the dataset transit system requires for initialization. Use of nested includes makes the filtering of initial read for 
+routes with or without filter is less of a concern as all it needs is the route id to make the next read. 
 See `MbtaTransitSystemInitializer.initialize` method for more details.
 
 `simple.transitsystem.mbta.Mbta` class has a main method to read the data from MBTA api endpoints. It also initializes
@@ -23,7 +23,7 @@ This application requires JDK 11 or higher. After checking out the repo, execute
 After successfully running, follow the onscreen messages to use the application. 
 
 MBAT `api-key` is optional to run this application. You may add your `api-key` in `MbtaTransitSystemInitializer.API_KEY`
-to avoid rate limit error.
+to avoid the rate limit error.
 
 
 
