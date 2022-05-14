@@ -2,6 +2,7 @@ package simple.transitsystem.mbta;
 
 import jakarta.json.*;
 import simple.transitsystem.core.Route;
+import simple.transitsystem.core.RouteData;
 import simple.transitsystem.core.TransitSystem;
 
 import java.io.InputStream;
@@ -64,14 +65,14 @@ public class MbtaTransitSystemInitializer {
 
     /*
      * Initializes the TransitSystem for the given routes. It uses nested includes to avoid N+1 requests to read
-     * all stops along a representative trip. See MbtaRouteData for more details.
+     * all stops along a representative trip. See RouteData for more details.
      *
      * For more details about nested includes, see: https://www.mbta.com/developers/v3-api/best-practices
      */
     public TransitSystem initialize(Set<Route> routes) throws Exception {
 
         TransitSystem.Builder builder = TransitSystem.Builder.create();
-        MbtaRouteData mbtaRouteData = null;
+        RouteData mbtaRouteData = null;
         for (Route each : routes) {
             String resource = "/routes/" + each.getId() + "?include=route_patterns.representative_trip.stops";
             mbtaRouteData = MbtaRouteDataUnmarshaller.unmarshall(jsonResponseStream(resource));

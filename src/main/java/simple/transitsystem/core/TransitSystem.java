@@ -1,7 +1,5 @@
 package simple.transitsystem.core;
 
-import simple.transitsystem.mbta.MbtaRouteData;
-
 import java.util.*;
 
 /**
@@ -86,7 +84,7 @@ public class TransitSystem {
             return new Builder();
         }
 
-        public Builder addRoute(MbtaRouteData mbtaRoute) {
+        public Builder addRoute(RouteData mbtaRoute) {
             this.routes.add(mbtaRoute.getRoute());
 
             for(List<String> stopIds : mbtaRoute.getRepresentativeTripsStopIds()) {

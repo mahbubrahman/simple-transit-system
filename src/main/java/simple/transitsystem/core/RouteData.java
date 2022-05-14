@@ -1,22 +1,18 @@
-package simple.transitsystem.mbta;
-
-import simple.transitsystem.core.Route;
-import simple.transitsystem.core.StationStop;
-import simple.transitsystem.core.Stop;
+package simple.transitsystem.core;
 
 import java.util.*;
 
 /**
- * This is a data container class that holds MBTA route data to initialize the Simple Transit System. To construct the
+ * This is a data container class that holds route data to initialize the Simple Transit System. To construct the
  * Transit System Network, the initializer needs to provide the route stops in appropriate sequence and directions.
- * The following resource relationships available in MBTA api are used here to get the stops in proper order:
+ * The following resource relationships available in a transit system are used here to get the stops in proper order:
  *
- * MBTA Route has many route_patterns
+ * Route has many route_patterns
  * RoutePattern has many trips
  * RoutePattern has one representative_trip
  * Trip has many stops (represented in proper sequence and direction)
  */
-public class MbtaRouteData {
+public class RouteData {
 
     private Route route;
     private Map<String, StationStop> stationByStopId = new HashMap<>();
@@ -39,7 +35,7 @@ public class MbtaRouteData {
         return representativeTripsStopIds;
     }
 
-    private MbtaRouteData(Builder builder) {
+    private RouteData(Builder builder) {
         this.route = new Route(builder.routeId, builder.routeName, builder.routeType);
         for(Stop stop : builder.stops) {
             stationByStopId.put(stop.getId(), stop.getStationStop());
@@ -49,7 +45,7 @@ public class MbtaRouteData {
     }
 
     /*
-     * MbtaRouteData Builder.
+     * RouteData Builder.
      */
     public static class Builder {
         private String routeId;
@@ -94,14 +90,14 @@ public class MbtaRouteData {
             return this;
         }
 
-        public MbtaRouteData build() {
-            return new MbtaRouteData(this);
+        public RouteData build() {
+            return new RouteData(this);
         }
     }
 
     @Override
     public String toString() {
-        return "MbtaRouteData{" +
+        return "RouteData{" +
                 "route=" + route +
                 ", stopMap=" + stationByStopId +
                 ", representativeTripsStopIds=" + representativeTripsStopIds +

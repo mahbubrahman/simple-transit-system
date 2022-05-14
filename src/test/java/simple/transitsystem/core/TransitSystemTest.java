@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.util.logging.Logger;
 
 import org.junit.jupiter.api.*;
-import simple.transitsystem.mbta.MbtaRouteData;
 import simple.transitsystem.mbta.MbtaRouteDataUnmarshaller;
 
 import java.io.File;
@@ -23,7 +22,7 @@ public class TransitSystemTest {
     void setup() throws FileNotFoundException {
         File initialFile = new File("src/test/resources/sample-full.json");
         InputStream targetStream = new FileInputStream(initialFile);
-        MbtaRouteData routeData = MbtaRouteDataUnmarshaller.unmarshall(targetStream);
+        RouteData routeData = MbtaRouteDataUnmarshaller.unmarshall(targetStream);
         transitSystem = TransitSystem.Builder.create().addRoute(routeData).build();
     }
 

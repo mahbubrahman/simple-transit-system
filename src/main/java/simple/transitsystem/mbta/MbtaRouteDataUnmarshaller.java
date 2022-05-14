@@ -1,6 +1,7 @@
 package simple.transitsystem.mbta;
 
 import jakarta.json.*;
+import simple.transitsystem.core.RouteData;
 import simple.transitsystem.core.Stop;
 
 import java.io.InputStream;
@@ -13,9 +14,9 @@ import java.util.List;
  */
 public class MbtaRouteDataUnmarshaller {
 
-    public static MbtaRouteData unmarshall(final InputStream is) {
+    public static RouteData unmarshall(final InputStream is) {
 
-        final MbtaRouteData.Builder builder = MbtaRouteData.Builder.create();
+        final RouteData.Builder builder = RouteData.Builder.create();
 
         JsonReader jsonReader = Json.createReader(is);
         JsonObject jsonObject = jsonReader.readObject();

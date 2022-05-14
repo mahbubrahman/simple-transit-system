@@ -1,6 +1,7 @@
 package simple.transitsystem.mbta;
 
 import org.junit.jupiter.api.*;
+import simple.transitsystem.core.RouteData;
 import simple.transitsystem.core.TransitSystemTest;
 
 import java.io.File;
@@ -14,7 +15,7 @@ public class MBTARouteDataUnmarshallerTest {
 
     private static final Logger logger = Logger.getLogger(TransitSystemTest.class.getName());
 
-    MbtaRouteData routeData;
+    RouteData routeData;
 
     @BeforeAll
     void setup() throws FileNotFoundException {
