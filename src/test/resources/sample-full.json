@@ -1,0 +1,2976 @@
+{
+  "data": {
+    "attributes": {
+      "color": "DA291C",
+      "description": "Rapid Transit",
+      "direction_destinations": [
+        "Ashmont/Braintree",
+        "Alewife"
+      ],
+      "direction_names": [
+        "South",
+        "North"
+      ],
+      "fare_class": "Rapid Transit",
+      "long_name": "Red Line",
+      "short_name": "",
+      "sort_order": 10010,
+      "text_color": "FFFFFF",
+      "type": 1
+    },
+    "id": "Red",
+    "links": {
+      "self": "/routes/Red"
+    },
+    "relationships": {
+      "line": {
+        "data": {
+          "id": "line-Red",
+          "type": "line"
+        }
+      },
+      "route_patterns": {
+        "data": [
+          {
+            "id": "Red-1-0",
+            "type": "route_pattern"
+          },
+          {
+            "id": "Red-1-0_70061_70067_2",
+            "type": "route_pattern"
+          },
+          {
+            "id": "Red-1-1",
+            "type": "route_pattern"
+          },
+          {
+            "id": "Red-1-1_70068_70061_0",
+            "type": "route_pattern"
+          },
+          {
+            "id": "Red-3-0",
+            "type": "route_pattern"
+          },
+          {
+            "id": "Red-3-0_70061_70067_2",
+            "type": "route_pattern"
+          },
+          {
+            "id": "Red-3-1",
+            "type": "route_pattern"
+          },
+          {
+            "id": "Red-3-1_70068_70061_0",
+            "type": "route_pattern"
+          }
+        ]
+      }
+    },
+    "type": "route"
+  },
+  "included": [
+    {
+      "attributes": {
+        "direction_id": 1,
+        "name": "Braintree - Harvard",
+        "sort_order": 10010199,
+        "time_desc": null,
+        "typicality": 4
+      },
+      "id": "Red-3-1_70068_70061_0",
+      "links": {
+        "self": "/route_patterns/Red-3-1_70068_70061_0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50891499-AlewifeHarvard0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Porter - Red Line - Alewife",
+        "latitude": 42.3884,
+        "location_type": 0,
+        "longitude": -71.119149,
+        "municipality": "Cambridge",
+        "name": "Porter",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70066",
+      "links": {
+        "self": "/stops/70066"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70066"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-portr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "direction_id": 0,
+        "name": "Harvard - Ashmont",
+        "sort_order": 10010099,
+        "time_desc": null,
+        "typicality": 4
+      },
+      "id": "Red-1-0_70061_70067_2",
+      "links": {
+        "self": "/route_patterns/Red-1-0_70061_70067_2"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50891413-AlewifeHarvard2",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Savin Hill - Red Line - Alewife",
+        "latitude": 42.310591,
+        "location_type": 0,
+        "longitude": -71.053612,
+        "municipality": "Boston",
+        "name": "Savin Hill",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70088",
+      "links": {
+        "self": "/stops/70088"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70088"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-shmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "direction_id": 0,
+        "name": "Alewife - Ashmont",
+        "sort_order": 10010004,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Red-1-0",
+      "links": {
+        "self": "/route_patterns/Red-1-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50890602",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 0,
+        "block_id": "S931_-6",
+        "direction_id": 1,
+        "headsign": "Alewife",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50890494",
+      "links": {
+        "self": "/trips/50890494"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Red-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "SpringWeekday",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "931_0010",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70094",
+              "type": "stop"
+            },
+            {
+              "id": "70092",
+              "type": "stop"
+            },
+            {
+              "id": "70090",
+              "type": "stop"
+            },
+            {
+              "id": "70088",
+              "type": "stop"
+            },
+            {
+              "id": "70086",
+              "type": "stop"
+            },
+            {
+              "id": "70084",
+              "type": "stop"
+            },
+            {
+              "id": "70082",
+              "type": "stop"
+            },
+            {
+              "id": "70080",
+              "type": "stop"
+            },
+            {
+              "id": "70078",
+              "type": "stop"
+            },
+            {
+              "id": "70076",
+              "type": "stop"
+            },
+            {
+              "id": "70074",
+              "type": "stop"
+            },
+            {
+              "id": "70072",
+              "type": "stop"
+            },
+            {
+              "id": "70070",
+              "type": "stop"
+            },
+            {
+              "id": "70068",
+              "type": "stop"
+            },
+            {
+              "id": "70066",
+              "type": "stop"
+            },
+            {
+              "id": "70064",
+              "type": "stop"
+            },
+            {
+              "id": "70061",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Davis - Red Line - Ashmont/Braintree",
+        "latitude": 42.39674,
+        "location_type": 0,
+        "longitude": -71.121815,
+        "municipality": "Somerville",
+        "name": "Davis",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70063",
+      "links": {
+        "self": "/stops/70063"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70063"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-davis",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 0,
+        "block_id": "S933_-12-1-AlewifeHarvard0",
+        "direction_id": 1,
+        "headsign": "Alewife",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50891499-AlewifeHarvard0",
+      "links": {
+        "self": "/trips/50891499-AlewifeHarvard0"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Red-3-1_70068_70061_0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "RTL222-hms22016-Sa-01-AlfHrd",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "933_0010-70068-70061-0",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70105",
+              "type": "stop"
+            },
+            {
+              "id": "70104",
+              "type": "stop"
+            },
+            {
+              "id": "70102",
+              "type": "stop"
+            },
+            {
+              "id": "70100",
+              "type": "stop"
+            },
+            {
+              "id": "70098",
+              "type": "stop"
+            },
+            {
+              "id": "70096",
+              "type": "stop"
+            },
+            {
+              "id": "70084",
+              "type": "stop"
+            },
+            {
+              "id": "70082",
+              "type": "stop"
+            },
+            {
+              "id": "70080",
+              "type": "stop"
+            },
+            {
+              "id": "70078",
+              "type": "stop"
+            },
+            {
+              "id": "70076",
+              "type": "stop"
+            },
+            {
+              "id": "70074",
+              "type": "stop"
+            },
+            {
+              "id": "70072",
+              "type": "stop"
+            },
+            {
+              "id": "70070",
+              "type": "stop"
+            },
+            {
+              "id": "70068",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Charles/MGH - Red Line - Alewife",
+        "latitude": 42.361263,
+        "location_type": 0,
+        "longitude": -71.071602,
+        "municipality": "Boston",
+        "name": "Charles/MGH",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70074",
+      "links": {
+        "self": "/stops/70074"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70074"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-chmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Broadway - Red Line - Alewife",
+        "latitude": 42.342622,
+        "location_type": 0,
+        "longitude": -71.056967,
+        "municipality": "Boston",
+        "name": "Broadway",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70082",
+      "links": {
+        "self": "/stops/70082"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70082"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-brdwy",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Braintree - Red Line",
+        "latitude": 42.207424,
+        "location_type": 0,
+        "longitude": -71.001645,
+        "municipality": "Braintree",
+        "name": "Braintree",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Red Line",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70105",
+      "links": {
+        "self": "/stops/70105"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70105"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-brntn",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Alewife - Red Line",
+        "latitude": 42.395428,
+        "location_type": 0,
+        "longitude": -71.142483,
+        "municipality": "Cambridge",
+        "name": "Alewife",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Red Line",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70061",
+      "links": {
+        "self": "/stops/70061"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70061"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-alfcl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Fields Corner - Red Line - Alewife",
+        "latitude": 42.299935,
+        "location_type": 0,
+        "longitude": -71.061945,
+        "municipality": "Boston",
+        "name": "Fields Corner",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70090",
+      "links": {
+        "self": "/stops/70090"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70090"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-fldcr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "direction_id": 1,
+        "name": "Braintree - Alewife",
+        "sort_order": 10010105,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Red-3-1",
+      "links": {
+        "self": "/route_patterns/Red-3-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50890710",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Park Street - Red Line - Alewife",
+        "latitude": 42.356395,
+        "location_type": 0,
+        "longitude": -71.062424,
+        "municipality": "Boston",
+        "name": "Park Street",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70076",
+      "links": {
+        "self": "/stops/70076"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70076"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-pktrm",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Kendall/MIT - Red Line - Ashmont/Braintree",
+        "latitude": 42.362355,
+        "location_type": 0,
+        "longitude": -71.085605,
+        "municipality": "Cambridge",
+        "name": "Kendall/MIT",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70071",
+      "links": {
+        "self": "/stops/70071"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70071"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-knncl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Wollaston - Red Line - Braintree",
+        "latitude": 42.266762,
+        "location_type": 0,
+        "longitude": -71.020542,
+        "municipality": "Quincy",
+        "name": "Wollaston",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70099",
+      "links": {
+        "self": "/stops/70099"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70099"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-wlsta",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Andrew - Red Line - Ashmont/Braintree",
+        "latitude": 42.330154,
+        "location_type": 0,
+        "longitude": -71.057655,
+        "municipality": "Boston",
+        "name": "Andrew",
+        "on_street": null,
+        "platform_code": "1",
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70083",
+      "links": {
+        "self": "/stops/70083"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70083"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-andrw",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Harvard - Red Line - Alewife",
+        "latitude": 42.373362,
+        "location_type": 0,
+        "longitude": -71.118956,
+        "municipality": "Cambridge",
+        "name": "Harvard",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70068",
+      "links": {
+        "self": "/stops/70068"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70068"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-harsq",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Downtown Crossing - Red Line - Ashmont/Braintree",
+        "latitude": 42.355518,
+        "location_type": 0,
+        "longitude": -71.060225,
+        "municipality": "Boston",
+        "name": "Downtown Crossing",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70077",
+      "links": {
+        "self": "/stops/70077"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70077"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-dwnxg",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Davis - Red Line - Alewife",
+        "latitude": 42.39674,
+        "location_type": 0,
+        "longitude": -71.121815,
+        "municipality": "Somerville",
+        "name": "Davis",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70064",
+      "links": {
+        "self": "/stops/70064"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70064"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-davis",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Porter - Red Line - Ashmont/Braintree",
+        "latitude": 42.3884,
+        "location_type": 0,
+        "longitude": -71.119149,
+        "municipality": "Cambridge",
+        "name": "Porter",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70065",
+      "links": {
+        "self": "/stops/70065"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70065"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-portr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Ashmont - Red Line - Alewife",
+        "latitude": 42.28453,
+        "location_type": 0,
+        "longitude": -71.063725,
+        "municipality": "Boston",
+        "name": "Ashmont",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70094",
+      "links": {
+        "self": "/stops/70094"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70094"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-asmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 0,
+        "block_id": "S933_-15",
+        "direction_id": 0,
+        "headsign": "Braintree",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50890817",
+      "links": {
+        "self": "/trips/50890817"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Red-3-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "SpringWeekday",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "933_0009",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70061",
+              "type": "stop"
+            },
+            {
+              "id": "70063",
+              "type": "stop"
+            },
+            {
+              "id": "70065",
+              "type": "stop"
+            },
+            {
+              "id": "70067",
+              "type": "stop"
+            },
+            {
+              "id": "70069",
+              "type": "stop"
+            },
+            {
+              "id": "70071",
+              "type": "stop"
+            },
+            {
+              "id": "70073",
+              "type": "stop"
+            },
+            {
+              "id": "70075",
+              "type": "stop"
+            },
+            {
+              "id": "70077",
+              "type": "stop"
+            },
+            {
+              "id": "70079",
+              "type": "stop"
+            },
+            {
+              "id": "70081",
+              "type": "stop"
+            },
+            {
+              "id": "70083",
+              "type": "stop"
+            },
+            {
+              "id": "70095",
+              "type": "stop"
+            },
+            {
+              "id": "70097",
+              "type": "stop"
+            },
+            {
+              "id": "70099",
+              "type": "stop"
+            },
+            {
+              "id": "70101",
+              "type": "stop"
+            },
+            {
+              "id": "70103",
+              "type": "stop"
+            },
+            {
+              "id": "70105",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "JFK/UMass - Red Line - Alewife (from Braintree)",
+        "latitude": 42.320434,
+        "location_type": 0,
+        "longitude": -71.052215,
+        "municipality": "Boston",
+        "name": "JFK/UMass",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife (from Braintree)",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70096",
+      "links": {
+        "self": "/stops/70096"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70096"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Shawmut - Red Line - Alewife",
+        "latitude": 42.293126,
+        "location_type": 0,
+        "longitude": -71.065738,
+        "municipality": "Boston",
+        "name": "Shawmut",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70092",
+      "links": {
+        "self": "/stops/70092"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70092"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-smmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Park Street - Red Line - Ashmont/Braintree",
+        "latitude": 42.356395,
+        "location_type": 0,
+        "longitude": -71.062424,
+        "municipality": "Boston",
+        "name": "Park Street",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70075",
+      "links": {
+        "self": "/stops/70075"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70075"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-pktrm",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Andrew - Red Line - Alewife",
+        "latitude": 42.330154,
+        "location_type": 0,
+        "longitude": -71.057655,
+        "municipality": "Boston",
+        "name": "Andrew",
+        "on_street": null,
+        "platform_code": "2",
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70084",
+      "links": {
+        "self": "/stops/70084"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70084"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-andrw",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Savin Hill - Red Line - Ashmont",
+        "latitude": 42.310603,
+        "location_type": 0,
+        "longitude": -71.053678,
+        "municipality": "Boston",
+        "name": "Savin Hill",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70087",
+      "links": {
+        "self": "/stops/70087"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70087"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-shmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Harvard - Red Line - Ashmont/Braintree",
+        "latitude": 42.373362,
+        "location_type": 0,
+        "longitude": -71.118956,
+        "municipality": "Cambridge",
+        "name": "Harvard",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70067",
+      "links": {
+        "self": "/stops/70067"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70067"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-harsq",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 0,
+        "block_id": "S931_-4-0-AlewifeHarvard2",
+        "direction_id": 0,
+        "headsign": "Ashmont",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50891413-AlewifeHarvard2",
+      "links": {
+        "self": "/trips/50891413-AlewifeHarvard2"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Red-1-0_70061_70067_2",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "RTL222-hms22016-Sa-01-AlfHrd",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "931_0009-70061-70067-2",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70067",
+              "type": "stop"
+            },
+            {
+              "id": "70069",
+              "type": "stop"
+            },
+            {
+              "id": "70071",
+              "type": "stop"
+            },
+            {
+              "id": "70073",
+              "type": "stop"
+            },
+            {
+              "id": "70075",
+              "type": "stop"
+            },
+            {
+              "id": "70077",
+              "type": "stop"
+            },
+            {
+              "id": "70079",
+              "type": "stop"
+            },
+            {
+              "id": "70081",
+              "type": "stop"
+            },
+            {
+              "id": "70083",
+              "type": "stop"
+            },
+            {
+              "id": "70085",
+              "type": "stop"
+            },
+            {
+              "id": "70087",
+              "type": "stop"
+            },
+            {
+              "id": "70089",
+              "type": "stop"
+            },
+            {
+              "id": "70091",
+              "type": "stop"
+            },
+            {
+              "id": "70093",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Fields Corner - Red Line - Ashmont",
+        "latitude": 42.299993,
+        "location_type": 0,
+        "longitude": -71.062021,
+        "municipality": "Boston",
+        "name": "Fields Corner",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70089",
+      "links": {
+        "self": "/stops/70089"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70089"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-fldcr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Central - Red Line - Alewife",
+        "latitude": 42.365379,
+        "location_type": 0,
+        "longitude": -71.103554,
+        "municipality": "Cambridge",
+        "name": "Central",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70070",
+      "links": {
+        "self": "/stops/70070"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70070"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-cntsq",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 0,
+        "block_id": "S931_-6",
+        "direction_id": 0,
+        "headsign": "Ashmont",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50890602",
+      "links": {
+        "self": "/trips/50890602"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Red-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "SpringWeekday",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "931_0009",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70061",
+              "type": "stop"
+            },
+            {
+              "id": "70063",
+              "type": "stop"
+            },
+            {
+              "id": "70065",
+              "type": "stop"
+            },
+            {
+              "id": "70067",
+              "type": "stop"
+            },
+            {
+              "id": "70069",
+              "type": "stop"
+            },
+            {
+              "id": "70071",
+              "type": "stop"
+            },
+            {
+              "id": "70073",
+              "type": "stop"
+            },
+            {
+              "id": "70075",
+              "type": "stop"
+            },
+            {
+              "id": "70077",
+              "type": "stop"
+            },
+            {
+              "id": "70079",
+              "type": "stop"
+            },
+            {
+              "id": "70081",
+              "type": "stop"
+            },
+            {
+              "id": "70083",
+              "type": "stop"
+            },
+            {
+              "id": "70085",
+              "type": "stop"
+            },
+            {
+              "id": "70087",
+              "type": "stop"
+            },
+            {
+              "id": "70089",
+              "type": "stop"
+            },
+            {
+              "id": "70091",
+              "type": "stop"
+            },
+            {
+              "id": "70093",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Quincy Adams - Red Line - Braintree",
+        "latitude": 42.233391,
+        "location_type": 0,
+        "longitude": -71.007153,
+        "municipality": "Quincy",
+        "name": "Quincy Adams",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70103",
+      "links": {
+        "self": "/stops/70103"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70103"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-qamnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "South Station - Red Line - Alewife",
+        "latitude": 42.352271,
+        "location_type": 0,
+        "longitude": -71.055242,
+        "municipality": "Boston",
+        "name": "South Station",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70080",
+      "links": {
+        "self": "/stops/70080"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70080"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-sstat",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Broadway - Red Line - Ashmont/Braintree",
+        "latitude": 42.342622,
+        "location_type": 0,
+        "longitude": -71.056967,
+        "municipality": "Boston",
+        "name": "Broadway",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70081",
+      "links": {
+        "self": "/stops/70081"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70081"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-brdwy",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "direction_id": 0,
+        "name": "Harvard - Braintree",
+        "sort_order": 10010099,
+        "time_desc": null,
+        "typicality": 4
+      },
+      "id": "Red-3-0_70061_70067_2",
+      "links": {
+        "self": "/route_patterns/Red-3-0_70061_70067_2"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50891584-AlewifeHarvard2",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "South Station - Red Line - Ashmont/Braintree",
+        "latitude": 42.352271,
+        "location_type": 0,
+        "longitude": -71.055242,
+        "municipality": "Boston",
+        "name": "South Station",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70079",
+      "links": {
+        "self": "/stops/70079"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70079"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-sstat",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Quincy Adams - Red Line - Alewife",
+        "latitude": 42.233391,
+        "location_type": 0,
+        "longitude": -71.007153,
+        "municipality": "Quincy",
+        "name": "Quincy Adams",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70104",
+      "links": {
+        "self": "/stops/70104"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70104"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-qamnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Quincy Center - Red Line - Alewife",
+        "latitude": 42.251809,
+        "location_type": 0,
+        "longitude": -71.005409,
+        "municipality": "Quincy",
+        "name": "Quincy Center",
+        "on_street": null,
+        "platform_code": "1",
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70102",
+      "links": {
+        "self": "/stops/70102"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70102"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-qnctr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "North Quincy - Red Line - Braintree",
+        "latitude": 42.27577,
+        "location_type": 0,
+        "longitude": -71.030194,
+        "municipality": "Quincy",
+        "name": "North Quincy",
+        "on_street": null,
+        "platform_code": "2",
+        "platform_name": "Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70097",
+      "links": {
+        "self": "/stops/70097"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70097"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-nqncy",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "JFK/UMass - Red Line - Alewife (from Ashmont)",
+        "latitude": 42.320637,
+        "location_type": 0,
+        "longitude": -71.052473,
+        "municipality": "Boston",
+        "name": "JFK/UMass",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife (from Ashmont)",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70086",
+      "links": {
+        "self": "/stops/70086"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70086"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Shawmut - Red Line - Ashmont",
+        "latitude": 42.293126,
+        "location_type": 0,
+        "longitude": -71.065738,
+        "municipality": "Boston",
+        "name": "Shawmut",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70091",
+      "links": {
+        "self": "/stops/70091"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70091"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-smmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "North Quincy - Red Line - Alewife",
+        "latitude": 42.275802,
+        "location_type": 0,
+        "longitude": -71.030144,
+        "municipality": "Quincy",
+        "name": "North Quincy",
+        "on_street": null,
+        "platform_code": "1",
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70098",
+      "links": {
+        "self": "/stops/70098"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70098"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-nqncy",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "direction_id": 0,
+        "name": "Alewife - Braintree",
+        "sort_order": 10010005,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Red-3-0",
+      "links": {
+        "self": "/route_patterns/Red-3-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50890817",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Downtown Crossing - Red Line - Alewife",
+        "latitude": 42.355518,
+        "location_type": 0,
+        "longitude": -71.060225,
+        "municipality": "Boston",
+        "name": "Downtown Crossing",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70078",
+      "links": {
+        "self": "/stops/70078"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70078"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-dwnxg",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Kendall/MIT - Red Line - Alewife",
+        "latitude": 42.362434,
+        "location_type": 0,
+        "longitude": -71.085591,
+        "municipality": "Cambridge",
+        "name": "Kendall/MIT",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70072",
+      "links": {
+        "self": "/stops/70072"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70072"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-knncl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 0,
+        "block_id": "S931_-4-1-AlewifeHarvard0",
+        "direction_id": 1,
+        "headsign": "Alewife",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50891327-AlewifeHarvard0",
+      "links": {
+        "self": "/trips/50891327-AlewifeHarvard0"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Red-1-1_70068_70061_0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "RTL222-hms22016-Sa-01-AlfHrd",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "931_0010-70068-70061-0",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70094",
+              "type": "stop"
+            },
+            {
+              "id": "70092",
+              "type": "stop"
+            },
+            {
+              "id": "70090",
+              "type": "stop"
+            },
+            {
+              "id": "70088",
+              "type": "stop"
+            },
+            {
+              "id": "70086",
+              "type": "stop"
+            },
+            {
+              "id": "70084",
+              "type": "stop"
+            },
+            {
+              "id": "70082",
+              "type": "stop"
+            },
+            {
+              "id": "70080",
+              "type": "stop"
+            },
+            {
+              "id": "70078",
+              "type": "stop"
+            },
+            {
+              "id": "70076",
+              "type": "stop"
+            },
+            {
+              "id": "70074",
+              "type": "stop"
+            },
+            {
+              "id": "70072",
+              "type": "stop"
+            },
+            {
+              "id": "70070",
+              "type": "stop"
+            },
+            {
+              "id": "70068",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Ashmont - Red Line - Exit Only",
+        "latitude": 42.284508,
+        "location_type": 0,
+        "longitude": -71.063833,
+        "municipality": "Boston",
+        "name": "Ashmont",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Exit Only",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70093",
+      "links": {
+        "self": "/stops/70093"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70093"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-asmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Quincy Center - Red Line - Braintree",
+        "latitude": 42.251809,
+        "location_type": 0,
+        "longitude": -71.005409,
+        "municipality": "Quincy",
+        "name": "Quincy Center",
+        "on_street": null,
+        "platform_code": "2",
+        "platform_name": "Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70101",
+      "links": {
+        "self": "/stops/70101"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70101"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-qnctr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "direction_id": 1,
+        "name": "Ashmont - Alewife",
+        "sort_order": 10010104,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Red-1-1",
+      "links": {
+        "self": "/route_patterns/Red-1-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50890494",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 0,
+        "block_id": "S933_-22",
+        "direction_id": 1,
+        "headsign": "Alewife",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50890710",
+      "links": {
+        "self": "/trips/50890710"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Red-3-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "SpringWeekday",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "933_0010",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70105",
+              "type": "stop"
+            },
+            {
+              "id": "70104",
+              "type": "stop"
+            },
+            {
+              "id": "70102",
+              "type": "stop"
+            },
+            {
+              "id": "70100",
+              "type": "stop"
+            },
+            {
+              "id": "70098",
+              "type": "stop"
+            },
+            {
+              "id": "70096",
+              "type": "stop"
+            },
+            {
+              "id": "70084",
+              "type": "stop"
+            },
+            {
+              "id": "70082",
+              "type": "stop"
+            },
+            {
+              "id": "70080",
+              "type": "stop"
+            },
+            {
+              "id": "70078",
+              "type": "stop"
+            },
+            {
+              "id": "70076",
+              "type": "stop"
+            },
+            {
+              "id": "70074",
+              "type": "stop"
+            },
+            {
+              "id": "70072",
+              "type": "stop"
+            },
+            {
+              "id": "70070",
+              "type": "stop"
+            },
+            {
+              "id": "70068",
+              "type": "stop"
+            },
+            {
+              "id": "70066",
+              "type": "stop"
+            },
+            {
+              "id": "70064",
+              "type": "stop"
+            },
+            {
+              "id": "70061",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 0,
+        "block_id": "S933_-8-0-AlewifeHarvard2",
+        "direction_id": 0,
+        "headsign": "Braintree",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50891584-AlewifeHarvard2",
+      "links": {
+        "self": "/trips/50891584-AlewifeHarvard2"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Red-3-0_70061_70067_2",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "RTL222-hms22016-Sa-01-AlfHrd",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "933_0009-70061-70067-2",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70067",
+              "type": "stop"
+            },
+            {
+              "id": "70069",
+              "type": "stop"
+            },
+            {
+              "id": "70071",
+              "type": "stop"
+            },
+            {
+              "id": "70073",
+              "type": "stop"
+            },
+            {
+              "id": "70075",
+              "type": "stop"
+            },
+            {
+              "id": "70077",
+              "type": "stop"
+            },
+            {
+              "id": "70079",
+              "type": "stop"
+            },
+            {
+              "id": "70081",
+              "type": "stop"
+            },
+            {
+              "id": "70083",
+              "type": "stop"
+            },
+            {
+              "id": "70095",
+              "type": "stop"
+            },
+            {
+              "id": "70097",
+              "type": "stop"
+            },
+            {
+              "id": "70099",
+              "type": "stop"
+            },
+            {
+              "id": "70101",
+              "type": "stop"
+            },
+            {
+              "id": "70103",
+              "type": "stop"
+            },
+            {
+              "id": "70105",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "JFK/UMass - Red Line - Ashmont",
+        "latitude": 42.320632,
+        "location_type": 0,
+        "longitude": -71.052514,
+        "municipality": "Boston",
+        "name": "JFK/UMass",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70085",
+      "links": {
+        "self": "/stops/70085"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70085"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "direction_id": 1,
+        "name": "Ashmont - Harvard",
+        "sort_order": 10010199,
+        "time_desc": null,
+        "typicality": 4
+      },
+      "id": "Red-1-1_70068_70061_0",
+      "links": {
+        "self": "/route_patterns/Red-1-1_70068_70061_0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50891327-AlewifeHarvard0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Central - Red Line - Ashmont/Braintree",
+        "latitude": 42.365304,
+        "location_type": 0,
+        "longitude": -71.103621,
+        "municipality": "Cambridge",
+        "name": "Central",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70069",
+      "links": {
+        "self": "/stops/70069"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70069"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-cntsq",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Wollaston - Red Line - Alewife",
+        "latitude": 42.266788,
+        "location_type": 0,
+        "longitude": -71.020457,
+        "municipality": "Quincy",
+        "name": "Wollaston",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Alewife",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70100",
+      "links": {
+        "self": "/stops/70100"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70100"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-wlsta",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Charles/MGH - Red Line - Ashmont/Braintree",
+        "latitude": 42.361187,
+        "location_type": 0,
+        "longitude": -71.071505,
+        "municipality": "Boston",
+        "name": "Charles/MGH",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont/Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70073",
+      "links": {
+        "self": "/stops/70073"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70073"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-chmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "JFK/UMass - Red Line - Braintree",
+        "latitude": 42.320418,
+        "location_type": 0,
+        "longitude": -71.052287,
+        "municipality": "Boston",
+        "name": "JFK/UMass",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Braintree",
+        "vehicle_type": 1,
+        "wheelchair_boarding": 1
+      },
+      "id": "70095",
+      "links": {
+        "self": "/stops/70095"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70095"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

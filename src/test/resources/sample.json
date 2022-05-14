@@ -1,0 +1,877 @@
+{
+  "data": {
+    "attributes": {
+      "color": "DA291C",
+      "description": "Rapid Transit",
+      "direction_destinations": [
+        "Mattapan",
+        "Ashmont"
+      ],
+      "direction_names": [
+        "Outbound",
+        "Inbound"
+      ],
+      "fare_class": "Rapid Transit",
+      "long_name": "Mattapan Trolley",
+      "short_name": "",
+      "sort_order": 10011,
+      "text_color": "FFFFFF",
+      "type": 0
+    },
+    "id": "Mattapan",
+    "links": {
+      "self": "/routes/Mattapan"
+    },
+    "relationships": {
+      "line": {
+        "data": {
+          "id": "line-Mattapan",
+          "type": "line"
+        }
+      },
+      "route_patterns": {
+        "data": [
+          {
+            "id": "Mattapan-_-0",
+            "type": "route_pattern"
+          },
+          {
+            "id": "Mattapan-_-1",
+            "type": "route_pattern"
+          }
+        ]
+      }
+    },
+    "type": "route"
+  },
+  "included": [
+    {
+      "attributes": {
+        "bikes_allowed": 2,
+        "block_id": "M899_-1",
+        "direction_id": 1,
+        "headsign": "Ashmont",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50973682",
+      "links": {
+        "self": "/trips/50973682"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Mattapan",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Mattapan-_-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "SpringWeekday",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "899_0008",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70276",
+              "type": "stop"
+            },
+            {
+              "id": "70274",
+              "type": "stop"
+            },
+            {
+              "id": "70272",
+              "type": "stop"
+            },
+            {
+              "id": "70270",
+              "type": "stop"
+            },
+            {
+              "id": "70268",
+              "type": "stop"
+            },
+            {
+              "id": "70266",
+              "type": "stop"
+            },
+            {
+              "id": "70264",
+              "type": "stop"
+            },
+            {
+              "id": "70261",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 2,
+        "block_id": "M899_-3",
+        "direction_id": 0,
+        "headsign": "Mattapan",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "50973684",
+      "links": {
+        "self": "/trips/50973684"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "Mattapan",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "Mattapan-_-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "SpringWeekday",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "899_0005",
+            "type": "shape"
+          }
+        },
+        "stops": {
+          "data": [
+            {
+              "id": "70261",
+              "type": "stop"
+            },
+            {
+              "id": "70263",
+              "type": "stop"
+            },
+            {
+              "id": "70265",
+              "type": "stop"
+            },
+            {
+              "id": "70267",
+              "type": "stop"
+            },
+            {
+              "id": "70269",
+              "type": "stop"
+            },
+            {
+              "id": "70271",
+              "type": "stop"
+            },
+            {
+              "id": "70273",
+              "type": "stop"
+            },
+            {
+              "id": "70275",
+              "type": "stop"
+            }
+          ]
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Ashmont - Mattapan Trolley",
+        "latitude": 42.283768,
+        "location_type": 0,
+        "longitude": -71.063191,
+        "municipality": "Boston",
+        "name": "Ashmont",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Mattapan Trolley",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70261",
+      "links": {
+        "self": "/stops/70261"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70261"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-asmnl",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Cedar Grove - Mattapan Trolley - Mattapan",
+        "latitude": 42.279546,
+        "location_type": 0,
+        "longitude": -71.060392,
+        "municipality": "Boston",
+        "name": "Cedar Grove",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Mattapan",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70263",
+      "links": {
+        "self": "/stops/70263"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70263"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-cedgr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Cedar Grove - Mattapan Trolley - Ashmont",
+        "latitude": 42.279693,
+        "location_type": 0,
+        "longitude": -71.060381,
+        "municipality": "Boston",
+        "name": "Cedar Grove",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70264",
+      "links": {
+        "self": "/stops/70264"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70264"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-cedgr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Butler - Mattapan Trolley - Mattapan",
+        "latitude": 42.272449,
+        "location_type": 0,
+        "longitude": -71.062513,
+        "municipality": "Boston",
+        "name": "Butler",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Mattapan",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70265",
+      "links": {
+        "self": "/stops/70265"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70265"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-butlr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Butler - Mattapan Trolley - Ashmont",
+        "latitude": 42.272477,
+        "location_type": 0,
+        "longitude": -71.062438,
+        "municipality": "Boston",
+        "name": "Butler",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70266",
+      "links": {
+        "self": "/stops/70266"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70266"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-butlr",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Milton - Mattapan Trolley - Mattapan",
+        "latitude": 42.270388,
+        "location_type": 0,
+        "longitude": -71.067253,
+        "municipality": "Milton",
+        "name": "Milton",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Mattapan",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70267",
+      "links": {
+        "self": "/stops/70267"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70267"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-miltt",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Milton - Mattapan Trolley - Ashmont",
+        "latitude": 42.270308,
+        "location_type": 0,
+        "longitude": -71.067289,
+        "municipality": "Milton",
+        "name": "Milton",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70268",
+      "links": {
+        "self": "/stops/70268"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70268"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-miltt",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Central Avenue - Mattapan Trolley - Mattapan",
+        "latitude": 42.270054,
+        "location_type": 0,
+        "longitude": -71.073523,
+        "municipality": "Milton",
+        "name": "Central Avenue",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Mattapan",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70269",
+      "links": {
+        "self": "/stops/70269"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70269"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-cenav",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Central Avenue - Mattapan Trolley - Ashmont",
+        "latitude": 42.270001,
+        "location_type": 0,
+        "longitude": -71.073358,
+        "municipality": "Milton",
+        "name": "Central Avenue",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70270",
+      "links": {
+        "self": "/stops/70270"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70270"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-cenav",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Valley Road - Mattapan Trolley - Mattapan",
+        "latitude": 42.268389,
+        "location_type": 0,
+        "longitude": -71.081504,
+        "municipality": "Milton",
+        "name": "Valley Road",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Mattapan",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "id": "70271",
+      "links": {
+        "self": "/stops/70271"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70271"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-valrd",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Valley Road - Mattapan Trolley - Ashmont",
+        "latitude": 42.268347,
+        "location_type": 0,
+        "longitude": -71.081343,
+        "municipality": "Milton",
+        "name": "Valley Road",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "id": "70272",
+      "links": {
+        "self": "/stops/70272"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70272"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-valrd",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Capen Street - Mattapan Trolley - Mattapan",
+        "latitude": 42.267589,
+        "location_type": 0,
+        "longitude": -71.087139,
+        "municipality": "Milton",
+        "name": "Capen Street",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Mattapan",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70273",
+      "links": {
+        "self": "/stops/70273"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70273"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-capst",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Capen Street - Mattapan Trolley - Ashmont",
+        "latitude": 42.267563,
+        "location_type": 0,
+        "longitude": -71.087338,
+        "municipality": "Milton",
+        "name": "Capen Street",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70274",
+      "links": {
+        "self": "/stops/70274"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70274"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-capst",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Mattapan - Mattapan Trolley - Exit Only",
+        "latitude": 42.267625,
+        "location_type": 0,
+        "longitude": -71.092389,
+        "municipality": "Boston",
+        "name": "Mattapan",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Exit Only",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70275",
+      "links": {
+        "self": "/stops/70275"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70275"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-matt",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "address": null,
+        "at_street": null,
+        "description": "Mattapan - Mattapan Trolley - Ashmont",
+        "latitude": 42.267559,
+        "location_type": 0,
+        "longitude": -71.092233,
+        "municipality": "Boston",
+        "name": "Mattapan",
+        "on_street": null,
+        "platform_code": null,
+        "platform_name": "Ashmont",
+        "vehicle_type": 0,
+        "wheelchair_boarding": 1
+      },
+      "id": "70276",
+      "links": {
+        "self": "/stops/70276"
+      },
+      "relationships": {
+        "facilities": {
+          "links": {
+            "related": "/facilities/?filter[stop]=70276"
+          }
+        },
+        "parent_station": {
+          "data": {
+            "id": "place-matt",
+            "type": "stop"
+          }
+        },
+        "zone": {
+          "data": {
+            "id": "RapidTransit",
+            "type": "zone"
+          }
+        }
+      },
+      "type": "stop"
+    },
+    {
+      "attributes": {
+        "direction_id": 0,
+        "name": "Ashmont - Mattapan",
+        "sort_order": 10011000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Mattapan-_-0",
+      "links": {
+        "self": "/route_patterns/Mattapan-_-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50973684",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Mattapan",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "direction_id": 1,
+        "name": "Mattapan - Ashmont",
+        "sort_order": 10011100,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Mattapan-_-1",
+      "links": {
+        "self": "/route_patterns/Mattapan-_-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "50973682",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Mattapan",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}
