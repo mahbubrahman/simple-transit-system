@@ -17,8 +17,7 @@ import java.util.Set;
  */
 public class MbtaTransitSystemInitializer {
 
-    private static final String API_KEY = "d85ab8e7b5274c5db1847a568cd325f5";
-    //private static final String API_KEY = "";
+    private static final String API_KEY = "";
 
     private static final String API_HOST_URL = "https://api-v3.mbta.com";
 
