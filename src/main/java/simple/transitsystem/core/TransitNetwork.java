@@ -41,15 +41,15 @@ public class TransitNetwork {
 
     public List<Connection> getDirections(StationStop origin, StationStop destination) {
 
-        List<Connection> route = new LinkedList();
+        List<Connection> directions = new LinkedList();
         Set<StationStop> reachableStations = new HashSet<>();
         Map<StationStop, StationStop> previousStations = new HashMap();
         List<StationStop> neighbors = network.get(origin);
 
         for (StationStop neighbor : neighbors) {
             if (neighbor.equals(destination)) {
-                route.add(getConnection(origin, destination));
-                return route;
+                directions.add(getConnection(origin, destination, null));
+                return directions;
             } else {
                 reachableStations.add(neighbor);
                 previousStations.put(neighbor, origin);
@@ -94,27 +94,38 @@ public class TransitNetwork {
         StationStop keyStop = destination;
         StationStop stop;
         keepLooping = true;
+        Route previousRoute = null;
+        Connection connection = null;
         while (keepLooping) {
             stop = previousStations.get(keyStop);
-            route.add(0, getConnection(stop, keyStop));
+            connection = getConnection(stop, keyStop, previousRoute);
+            directions.add(0, connection);
+            previousRoute = connection.getRoute();
             if (origin.equals(stop)) {
                 keepLooping = false;
             }
             keyStop = stop;
         }
 
-        return route;
+        return directions;
     }
 
-    private Connection getConnection(StationStop stationStop1, StationStop stationStop2) {
+    private Connection getConnection(StationStop stationStop1, StationStop stationStop2, Route preferredRoute) {
+        Connection connectionMatchByStopIds = null;
         for (Connection each : connections) {
             StationStop one = each.getStationStop1();
             StationStop two = each.getStationStop2();
-            if ((stationStop1.equals(one)) && stationStop2.equals(two)) {
-                return each;
+            if (stationStop1.equals(one) && stationStop2.equals(two)) {
+                if (preferredRoute == null) {
+                    return each;
+                }
+                if (each.getRoute().getId().equals(preferredRoute.getId())) {
+                    return each;
+                }
+                connectionMatchByStopIds = each;
             }
         }
-        return null;
+        return connectionMatchByStopIds;
     }
 
 }
