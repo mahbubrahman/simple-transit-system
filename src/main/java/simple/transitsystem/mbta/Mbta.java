@@ -1,5 +1,6 @@
 package simple.transitsystem.mbta;
 
+import simple.transitsystem.core.Connection;
 import simple.transitsystem.core.Route;
 import simple.transitsystem.core.TransitSystem;
 import simple.transitsystem.core.TransitSystemPrinter;
@@ -47,18 +48,17 @@ public class Mbta {
                     scanner = new Scanner(System.in);
                     String destinationStopName = scanner.nextLine();
 
-                    List route = null;
+                    List<Connection> directions = null;
                     try {
-                        route =  transitSystem.getDirections(originStopName.trim().toLowerCase(),
-                                destinationStopName.trim().toLowerCase());
+                        directions =  transitSystem.getDirections(originStopName, destinationStopName);
                     } catch (Exception e) {
                         if(TransitSystem.ERROR_MASSAGE_INVALID_STOP_NAME.equals(e.getMessage())) {
-                            System.out.println("One of the stop names was invalid.\n");
+                            System.out.println("Invalid stop(s).\n");
                         }
                         break;
                     }
                     System.out.println("\nDirection between " + originStopName + " and " + destinationStopName + " >>");
-                    transitSystemPrinter.printDirections(route);
+                    transitSystemPrinter.printDirections(directions);
                     break;
 
                 case 4:

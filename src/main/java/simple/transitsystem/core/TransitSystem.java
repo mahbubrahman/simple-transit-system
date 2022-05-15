@@ -47,8 +47,8 @@ public class TransitSystem {
 
     public List<Connection> getDirections(String originStopName, String destinationStopName) {
 
-        StationStop origin = stationByStationName.get(originStopName);
-        StationStop destination = stationByStationName.get(destinationStopName);
+        StationStop origin = stationByStationName.get(originStopName.trim().toLowerCase());
+        StationStop destination = stationByStationName.get(destinationStopName.trim().toLowerCase());
 
         if (origin == null || destination == null) {
             throw new RuntimeException(ERROR_MASSAGE_INVALID_STOP_NAME);

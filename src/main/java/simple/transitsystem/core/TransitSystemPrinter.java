@@ -42,9 +42,9 @@ public class TransitSystemPrinter {
         out.println("\n");
     }
 
-    public void printDirections(List<Connection> route) {
+    public void printDirections(List<Connection> directions) {
 
-        Connection connection = route.stream().findFirst().get();
+        Connection connection = directions.stream().findFirst().get();
         String currentLine = connection.getRoute().getName();
         String previousLine = currentLine;
 
@@ -52,7 +52,7 @@ public class TransitSystemPrinter {
         out.println("Get on the " + currentLine + " at " + connection.getStationStop1().getName() +
                 " heading towards " + connection.getStationStop2().getName() + ".");
 
-        for (Connection each : route) {
+        for (Connection each : directions) {
             currentLine = each.getRoute().getName();
             if (currentLine.equals(previousLine)) {
                 out.println("  " + each.getStationStop1().getName() + " to " + each.getStationStop2().getName() + " > " + currentLine);
