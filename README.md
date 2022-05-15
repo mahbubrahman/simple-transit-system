@@ -12,7 +12,7 @@ the dataset transit system requires for initialization. Use of nested includes m
 for routes with or without filter less of a concern as all it needs is the route id to make the next read. 
 See `MbtaTransitSystemInitializer.initialize` method for more details.
 
-`simple.transitsystem.mbta.Mbta` class has a main method to read the data from MBTA api endpoints. It also initializes
+`simple.transitsystem.mbta.Mbta` class has a `main` method to read the data from MBTA api endpoints. It also initializes
 and starts the MBTA transit system.
 
 ## Running the application
@@ -20,7 +20,7 @@ This application requires JDK 11 or higher. After checking out the repo, execute
 ````
 ./mvnw clean compile exec:java -Dexec.mainClass="simple.transitsystem.mbta.Mbta"
 ````
-After successfully running, follow the onscreen messages to use the application. 
+Use `./mvnw.cmd` for Windows. After successfully running, follow the onscreen messages to use the application. 
 
 MBAT `api-key` is optional to run this application. You may add your `api-key` in `MbtaTransitSystemInitializer.API_KEY`
 to avoid the rate limit error.
