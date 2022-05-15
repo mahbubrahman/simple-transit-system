@@ -35,9 +35,11 @@ public class TransitSystemTest {
     void testBasic() throws FileNotFoundException {
         Assertions.assertTrue(transitSystem != null);
         Assertions.assertEquals(1, transitSystem.getRoutes().size());
+        Assertions.assertEquals("Red", transitSystem.getRoutes().stream().findFirst().get().getId());
         Assertions.assertEquals(22, transitSystem.routeWithMaximumNumberOfStops().getStationStops().size());
         Assertions.assertEquals(22, transitSystem.routeWithMinimumNumberOfStops().getStationStops().size());
         Assertions.assertEquals(0, transitSystem.getMultipleRouteConnectingStationStops().size());
+        Assertions.assertEquals(2, transitSystem.getDirections("Kendall/MIT", "Harvard").size());
     }
 
 
